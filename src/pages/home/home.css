@@ -1,0 +1,267 @@
+/* .home{
+    background-color: #071952;
+    height: 80vh;
+}
+
+.home-header{
+    font-size: medium;
+    display: grid;
+    place-content: centers;
+    color: white;
+} */
+
+/* home.css */
+img {
+  width: 100%;
+  display: block;
+}
+
+.home {
+  text-align: center;
+  padding: 20px;
+  background-color: #071952;
+  margin-top: 10em;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  align-items: flex-end;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin: 0;
+  align-content: left;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+}
+
+.home-img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.section-content h2 {
+  font-size: 2em;
+  margin: 0 0 10px;
+  color: white;
+}
+
+.section-content p {
+  font-size: 1.2em;
+  margin: 0;
+  color: white;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .section-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.section-content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #071952;
+
+  margin-top: 30px;
+}
+
+.book {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* border: solid red 2px; */
+}
+
+.booking-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: #071952;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.booking-content .icon {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: black;
+}
+.booking-content .icon i {
+  font-size: 50px;
+}
+
+.booking-content h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.booking-content p {
+  font-size: 1em;
+  margin: 0;
+}
+
+@media screen and (max-width: 790px) {
+  .book {
+    display: flex;
+    flex-direction: column;
+  }
+  .booking-content .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.testimony {
+  display: flex;
+  gap: 2rem;
+}
+.testimony .testimony-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.testimonials h2 {
+  font-size: 2.5em;
+  color: #071952;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  display: grid;
+  place-content: center;
+}
+
+.testimonials h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #6e8efb;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonials-content {
+  padding: 40px 20px;
+  background-color: #071952;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.author-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-author h4 {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.testimonial-author p {
+  font-size: 0.95em;
+  margin: 0;
+}
+
+@media screen and (max-width: 790px) {
+  .testimony {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-content {
+    flex-direction: column;
+  }
+}

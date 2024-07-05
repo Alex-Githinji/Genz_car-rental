@@ -1,0 +1,145 @@
+.vehicles-banner {
+  background-color: #f8f9fa;
+  /* background-image: url(../../assets/banner.jpg); */
+  background-size: contain;
+  border: 2px solid #071952;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 11em;
+}
+
+.vehicles-banner h3 {
+  color: #333;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 400;
+  /* margin-top: 10rem; */
+  
+}
+
+@media (min-width: 768px) {
+  .vehicles-banner {
+    padding: 30px;
+  }
+
+  .vehicles-banner h3 {
+    font-size: 1.5em;
+  }
+}
+
+.vehicles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vehicle {
+  margin: 20px;
+  /* border: solid red 2px; */
+}
+
+.vehicle-card {
+  width: 350px;
+  background-color: #EBF4F6;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  /* height: 290px; */
+  border-radius: 8px;
+}
+
+.image p {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #071952;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin: 0;
+}
+
+.vehicle-image {
+  width: 100%;
+  min-height: 50%;
+  object-fit: cover;
+}
+
+.vehicle-details {
+  padding: 25px;
+  text-align: left;
+}
+
+.class {
+  /* border: solid red 2px; */
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  color: white;
+}
+
+.vehicle-details h2 {
+  font-size: 1em;
+  color: #333333;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.vehicle-details h3 {
+  font-size: 1em;
+  color: #0056b3;
+  margin: 0 0 15px 0;
+  display: flex;
+}
+.vehicle-details p {
+  font-size: 1em;
+  color: #555555;
+  margin: 10px 0;
+}
+
+.vehicle-price {
+  font-size: 1.4em;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.vehicle-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #071952;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  border-radius: 0 0 15px 15px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.vehicle-button:hover {
+  background-color: #37b7c3;
+}

@@ -1,0 +1,103 @@
+.form-booking{
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    margin-top: 11rem;
+   
+}
+
+.form-container {
+  min-width: 480px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #EBF4F6;
+  width: 40%;
+  color: #071952;
+ 
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px;
+  color: #fff;
+  background-color: #071952;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-top: 55px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.image1 img{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1390px) {
+    .image img{
+        width: 100%;
+        height: 100%;
+        }
+
+        .form-booking{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+    
+}
