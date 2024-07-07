@@ -7,6 +7,7 @@
   font-family: "Arial", sans-serif;
   border-top: 30px;
   margin-top: 30px;
+
 }
 
 .footer {
@@ -53,7 +54,7 @@
   margin-right: 10px;
 }
 
-.footer-content button {
+.footer-content button{
   padding: 10px 20px;
   font-size: 1em;
   background-color: #071952;
@@ -62,6 +63,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 10rem;
 }
 
 .footer-content button:hover {

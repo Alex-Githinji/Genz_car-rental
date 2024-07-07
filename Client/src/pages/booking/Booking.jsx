@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./booking.css"
 import { Formik, Form, Field,ErrorMessage } from 'formik'
-
+import { useLocation } from "react-router-dom";
 import home from "../../assets/home.jpg"
 
 
@@ -33,6 +33,13 @@ const validate = values => {
 };
 
 const Booking = () => {
+  const location = useLocation();
+  const { vehicle } = location.state || {};
+
+  if (!vehicle) {
+    return <p>No vehicle data provided</p>;
+  }
+
   return (
     <section className='form-booking'>    
      <div className="form-container">
@@ -78,18 +85,6 @@ const Booking = () => {
               <ErrorMessage name="dropOffDate" component="div" className="error" />
             </div>
 
-          {/* <div className="form-group">
-            <label htmlFor="vehicle">Vehicle</label>
-            <Field as="select" name="vehicle">
-              <option value="">Select a vehicle</option>
-              <option value="Audi Q5">Audi Q5</option>
-              <option value="BMW X3">BMW X3</option>
-              <option value="Mercedes GLC">Mercedes GLC</option>
-              <option value="Toyota RAV4">Toyota RAV4</option>
-            </Field>
-            <ErrorMessage name="vehicle" component="div" className="error" />
-          </div> */}
-
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
@@ -98,7 +93,8 @@ const Booking = () => {
     </Formik>
   </div>
     <div className="image1">
-          <img src={home} alt="car" />
+          <img src={vehicle.image} alt={`${vehicle.type} ${vehicle.model}`} />
+
     </div>
 
     </section>

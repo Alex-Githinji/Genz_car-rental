@@ -20,6 +20,12 @@ function Header() {
           <li className="navbar-item">
             <Link to="/contact">Contact</Link>
           </li>
+          <li className="navbar-item">
+          <Link to="/signup">Signup</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/login">Login</Link>
+        </li>
         </ul>
       </nav>
     </div>

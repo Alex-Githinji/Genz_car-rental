@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Link } from "react-router-dom";
 import "./contact.css";
 import { FaPhoneFlip, FaAddressBook, FaInstagram } from "react-icons/fa6";
@@ -10,7 +10,7 @@ function Contact() {
     <section>
       <div class="section1-header1">
         <div class="container1">
-          <h2>Contact Us</h2>
+          <h2>Contact Us</h2>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

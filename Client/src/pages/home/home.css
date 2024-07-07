@@ -1,16 +1,4 @@
-/* .home{
-    background-color: #071952;
-    height: 80vh;
-}
 
-.home-header{
-    font-size: medium;
-    display: grid;
-    place-content: centers;
-    color: white;
-} */
-
-/* home.css */
 img {
   width: 100%;
   display: block;
@@ -20,7 +8,7 @@ img {
   text-align: center;
   padding: 20px;
   background-color: #071952;
-  margin-top: 10em;
+  /* margin-top: 10em; */
 }
 
 .hero {
