@@ -27,10 +27,28 @@ model cars{
   id String @id @default(uuid())
   name String
   price Int
-  image String
   description String
-  booked   Boolean @default(false)
 
-  
+
   @@map("Cars_table")  
+}
+
+model Cars{
+  id String @id @default(uuid())
+  name String
+  price Int
+  description String
+
+
+  @@map("Cars")  
+}
+
+model Booking {
+  id String @id @default(uuid())
+  name String
+  email String
+  car  String
+  phoneNumber String @unique
+  startDate String
+  endDate String
 }
