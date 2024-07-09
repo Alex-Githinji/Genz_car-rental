@@ -22,6 +22,7 @@ const Login = () => {
       const data = await response.json();
       if (data.success) {
         setSubmitted(true);
+        alert("loggin succesfully")
         navigate("/"); 
       } else {
         setError(data.message);

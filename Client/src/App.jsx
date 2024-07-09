@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,6 +25,7 @@ function App() {
           <Route path="/login" element={<Login />} /> 
         </Routes>
         <Footer />
+  
       </BrowserRouter>
     </>
   );

@@ -21,7 +21,8 @@ const Signup = () => {
       });
       const data = await response.json();
       if (data.success) {
-        setSubmitted(true); 
+        setSubmitted(true);
+        alert ("account created successfully") 
         navigate("/login");  
       } else {
         setError(data.message);

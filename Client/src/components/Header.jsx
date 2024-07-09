@@ -23,9 +23,9 @@ function Header() {
           <li className="navbar-item">
           <Link to="/signup">Signup</Link>
         </li>
-        <li className="navbar-item">
+        {/* <li className="navbar-item">
           <Link to="/login">Login</Link>
-        </li>
+        </li> */}
         </ul>
       </nav>
     </div>
