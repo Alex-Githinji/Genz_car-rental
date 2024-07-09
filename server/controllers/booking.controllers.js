@@ -6,7 +6,6 @@ export const bookCar = async (req, res) => {
   try {
     const { car, name, email, phoneNumber, startDate, endDate } = req.body;
 
-    // Validate input
     if (!car) {
       return res.status(400).json({ success: false, message: "Car name is required" });
     }
